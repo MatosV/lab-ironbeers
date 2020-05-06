@@ -5,8 +5,8 @@
     <h1>{{ name }}</h1>
     <h3>{{ tageline}} </h3>
     <p>{{ description}} </p>
-    <h3>Food Pairign{{food_pairing}}</h3>
-    <p><strong>Brewers Tips:</strong>{{ brewers_tips }} </p>
+    <h3>Food Pairign{{#each food_pairing}}<li>{{this}}</li>{{/each}}</h3>
+    <p><strong>Brewers Tips:</strong>{{ brewers_tips }}</p>
   </div>
   {{/each}}
 </div>
