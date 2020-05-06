@@ -1,0 +1,20 @@
+<h1>beer goes here</h1>
+
+<ul>
+  {{#each beers}}
+    <li class="beer-bottle">
+      <img src="{{ image_url }}" alt="{{ name }}" />
+      <div class="bottle-detail">
+          <strong>"{{ name }}"</strong>
+          <br>
+          <small>"{{ tagline }}"</small>
+          <br>
+          <small>"{{ desciption }}"</small>
+          <br>
+          <small>"{{ first_brewed }}"</small>
+          <br>
+          <small>"{{ ph }}"</small>
+      </div>
+    </li>
+  {{/each}}
+</ul>
